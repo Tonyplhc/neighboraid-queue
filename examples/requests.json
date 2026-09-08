@@ -1,0 +1,5 @@
+[
+  {"request_id":"DEMO-001","household_size":2,"items":{"rice":2,"canned_food":4},"urgency":"routine","consent":true},
+  {"request_id":"DEMO-002","household_size":5,"items":{"baby_food":3,"hygiene_kit":2},"urgency":"today","consent":true},
+  {"request_id":"DEMO-003","household_size":1,"items":{"rice":1},"urgency":"soon","consent":false}
+]

@@ -1,0 +1,53 @@
+{
+  "agent_framework": "Strands Agents SDK",
+  "auto_ready": 1,
+  "blocked": 1,
+  "human_review": 1,
+  "processed": 3,
+  "records": [
+    {
+      "allocations": {
+        "canned_food": 4,
+        "rice": 2
+      },
+      "external_action_taken": false,
+      "human_decision_required": false,
+      "processed_on": "2026-09-07",
+      "request_id": "DEMO-001",
+      "schema_version": 1,
+      "shortages": {},
+      "status": "AUTO_READY"
+    },
+    {
+      "allocations": {
+        "baby_food": 1,
+        "hygiene_kit": 2
+      },
+      "external_action_taken": false,
+      "human_decision_required": true,
+      "processed_on": "2026-09-07",
+      "request_id": "DEMO-002",
+      "schema_version": 1,
+      "shortages": {
+        "baby_food": 2
+      },
+      "status": "HUMAN_REVIEW"
+    },
+    {
+      "allocations": {},
+      "external_action_taken": false,
+      "human_decision_required": false,
+      "processed_on": "2026-09-07",
+      "request_id": null,
+      "schema_version": 1,
+      "shortages": {},
+      "status": "BLOCKED"
+    }
+  ],
+  "remaining_inventory": {
+    "baby_food": 0,
+    "canned_food": 16,
+    "hygiene_kit": 2,
+    "rice": 8
+  }
+}

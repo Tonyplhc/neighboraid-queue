@@ -1,0 +1,33 @@
+{
+  "title": "NeighborAid Queue \u2014 captioned local demo",
+  "output": "demo/neighboraid-queue-demo.mp4",
+  "synthetic_data_only": true,
+  "narration": "omitted; complete captions are burned into every scene",
+  "resolution": [
+    1280,
+    720
+  ],
+  "fps": 30,
+  "slide_durations_seconds": [
+    10,
+    10,
+    12,
+    11,
+    12,
+    12,
+    11,
+    10,
+    11,
+    11,
+    9
+  ],
+  "transition_seconds": 1.0,
+  "expected_duration_seconds": 109.0,
+  "cli_command": ".venv/Scripts/neighboraid.exe --requests examples/requests.json --inventory examples/inventory.json --output demo-output.json",
+  "cli_exit_code": 0,
+  "cli_stdout": "{\"auto_ready\": 1, \"blocked\": 1, \"human_review\": 1, \"processed\": 3}",
+  "test_command": ".venv/Scripts/python.exe -m pytest -q",
+  "test_exit_code": 0,
+  "test_stdout": "...                                                                      [100%]",
+  "external_actions_taken": []
+}

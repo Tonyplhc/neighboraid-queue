@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "neighboraid-queue"
+version = "0.1.0"
+description = "Privacy-first food-bank request triage agent built with Strands Agents"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+dependencies = ["strands-agents>=1.20,<2"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<9", "pillow>=12,<13"]
+
+[project.scripts]
+neighboraid = "neighboraid.cli:main"
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/neighboraid"]
